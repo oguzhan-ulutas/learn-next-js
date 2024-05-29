@@ -9,15 +9,13 @@ function ButtonComponent() {
     let timeout = setTimeout(() => {
       buttonRef.current.textContent = "Click Me!";
     }, 2000);
-  
+
     return () => {
       clearTimeout(timeout);
     };
   }, []);
 
-  
-
   return <button ref={buttonRef}>Click Me!</button>;
 }
 
-export default ButtonComponent
+export default ButtonComponent;

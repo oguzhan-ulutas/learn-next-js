@@ -9,4 +9,8 @@ const totalPrice = products.reduce(
   0,
 );
 
-console.log(totalPrice)
+console.log(totalPrice);
+
+const ITERATION_COUNT = 10_000;
+
+console.log(ITERATION_COUNT);

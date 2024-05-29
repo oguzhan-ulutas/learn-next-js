@@ -4,6 +4,7 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 import ButtonComponent from "./components/ButtonComponent";
 import Cart from "./components/Cart";
+import Counter from "./components/Counter";
 
 const onRender = (
   id, // Profiler ID
@@ -31,6 +32,9 @@ function App() {
       </Profiler>
       <Profiler id="Cart" onRender={onRender}>
         <Cart products={products} />
+      </Profiler>
+      <Profiler id="Counter" onRender={onRender}>
+        <Counter />
       </Profiler>
     </>
   );

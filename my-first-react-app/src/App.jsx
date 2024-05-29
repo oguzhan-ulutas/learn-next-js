@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
 import ButtonComponent from "./components/ButtonComponent";
+import Cart from "./components/Cart";
 
 const onRender = (
   id, // Profiler ID
@@ -18,10 +19,18 @@ const onRender = (
 };
 
 function App() {
+  const products = [
+    { price: 100, quantity: 2 },
+    { price: 120, quantity: 2 },
+    { price: 110, quantity: 4 },
+  ];
   return (
     <>
-      <Profiler id="buttonComponent" onRender={onRender}>
+      <Profiler id="ButtonComponent" onRender={onRender}>
         <ButtonComponent />
+      </Profiler>
+      <Profiler id="Cart" onRender={onRender}>
+        <Cart products={products} />
       </Profiler>
     </>
   );

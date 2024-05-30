@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useCallback, useState } from "react";
 import Button2 from "./Button2";
 
 function Counter() {
   const [count, setCount] = useState(0);
 
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     setCount((prevState) => prevState + 1);
-  };
+  }, []);
 
   return (
     <div>

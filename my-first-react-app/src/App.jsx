@@ -5,6 +5,7 @@ import "./App.css";
 import ButtonComponent from "./components/ButtonComponent";
 import Cart from "./components/Cart";
 import Counter from "./components/Counter";
+import CandyDispenser from "./components/CandyDispenser";
 
 const onRender = (
   id, // Profiler ID
@@ -35,6 +36,10 @@ function App() {
       </Profiler>
       <Profiler id="Counter" onRender={onRender}>
         <Counter />
+      </Profiler>
+
+      <Profiler id="Candy" onRender={onRender}>
+        <CandyDispenser />
       </Profiler>
     </>
   );

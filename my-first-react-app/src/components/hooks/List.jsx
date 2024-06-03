@@ -10,6 +10,7 @@ const List = ({ getItems }) => {
   return (
     <div>
       {items.map((item) => {
+        console.log(`Rendering item ${item}`);
         return <div key={item}>{item}</div>;
       })}
     </div>

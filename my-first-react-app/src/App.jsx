@@ -22,11 +22,6 @@ const onRender = (
 };
 
 function App() {
-  const products = [
-    { price: 100, quantity: 2 },
-    { price: 120, quantity: 2 },
-    { price: 110, quantity: 4 },
-  ];
   return (
     <>
       <Link to="/">
@@ -39,6 +34,10 @@ function App() {
 
       <Link to="/callback-use">
         <button>useCallback</button>
+      </Link>
+
+      <Link to="/memo">
+        <button>memo</button>
       </Link>
     </>
   );

@@ -36,6 +36,10 @@ function App() {
       <Link to="/memo-use">
         <button>useMemo</button>
       </Link>
+
+      <Link to="/callback-use">
+        <button>useCallback</button>
+      </Link>
     </>
   );
 }

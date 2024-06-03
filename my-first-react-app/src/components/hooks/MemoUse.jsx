@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from "react";
+import { Link } from "react-router-dom";
 
 function slowFunction(num) {
   console.log("Calling Slow Function");
@@ -38,6 +39,10 @@ const MemoUse = () => {
       </button>
 
       <div style={{ ...themeStyles }}>{doubleNumber}</div>
+
+      <Link to="/">
+        <button>Return Home</button>
+      </Link>
     </>
   );
 };

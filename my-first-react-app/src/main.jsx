@@ -19,8 +19,8 @@ const onRender = (
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <Profiler id="App" onRender={onRender}>
-      <Router />
-    </Profiler>
+    {/* <Profiler id="App" onRender={onRender}> */}
+    <Router />
+    {/* </Profiler> */}
   </React.StrictMode>
 );

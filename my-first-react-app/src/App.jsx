@@ -6,6 +6,7 @@ import ButtonComponent from "./components/ButtonComponent";
 import Cart from "./components/Cart";
 import Counter from "./components/Counter";
 import CandyDispenser from "./components/CandyDispenser";
+import { Link } from "react-router-dom";
 
 const onRender = (
   id, // Profiler ID
@@ -28,19 +29,13 @@ function App() {
   ];
   return (
     <>
-      <Profiler id="ButtonComponent" onRender={onRender}>
-        <ButtonComponent />
-      </Profiler>
-      <Profiler id="Cart" onRender={onRender}>
-        <Cart products={products} />
-      </Profiler>
-      <Profiler id="Counter" onRender={onRender}>
-        <Counter />
-      </Profiler>
+      <Link to="/">
+        <button>Home</button>
+      </Link>
 
-      <Profiler id="Candy" onRender={onRender}>
-        <CandyDispenser />
-      </Profiler>
+      <Link to="/memo-use">
+        <button>useMemo</button>
+      </Link>
     </>
   );
 }

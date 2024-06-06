@@ -4,6 +4,7 @@ import MemoUse from "./components/hooks/MemoUse";
 import CallbackUse from "./components/hooks/CallbackUse";
 import Memo from "./components/hooks/Memo";
 import EffectUse from "./components/hooks/EffectUse";
+import RefUse from "./components/hooks/RefUse";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -12,6 +13,7 @@ const Router = () => {
     { path: "/callback-use", element: <CallbackUse /> },
     { path: "/memo", element: <Memo /> },
     { path: "/effect-use", element: <EffectUse /> },
+    { path: "/ref-use", element: <RefUse /> },
   ]);
   return <RouterProvider router={router} />;
 };

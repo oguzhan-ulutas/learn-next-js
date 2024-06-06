@@ -39,6 +39,10 @@ function App() {
       <Link to="/memo">
         <button>memo</button>
       </Link>
+
+      <Link to="/effect-use">
+        <button>useEffect</button>
+      </Link>
     </>
   );
 }

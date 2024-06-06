@@ -47,6 +47,14 @@ function App() {
       <Link to="/ref-use">
         <button>useRef</button>
       </Link>
+
+      <Link to="/reducer-use">
+        <button>useReducer</button>
+      </Link>
+
+      <Link to="/costom-hook">
+        <button>useReducer</button>
+      </Link>
     </>
   );
 }

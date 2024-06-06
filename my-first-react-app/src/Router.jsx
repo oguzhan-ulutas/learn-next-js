@@ -5,6 +5,8 @@ import CallbackUse from "./components/hooks/CallbackUse";
 import Memo from "./components/hooks/Memo";
 import EffectUse from "./components/hooks/EffectUse";
 import RefUse from "./components/hooks/RefUse";
+import ReducerUse from "./components/hooks/ReducerUse";
+import CustomHook from "./components/hooks/CustomHook";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -14,6 +16,8 @@ const Router = () => {
     { path: "/memo", element: <Memo /> },
     { path: "/effect-use", element: <EffectUse /> },
     { path: "/ref-use", element: <RefUse /> },
+    { path: "/reducer-use", element: <ReducerUse /> },
+    { path: "/costom-hook", element: <CustomHook /> },
   ]);
   return <RouterProvider router={router} />;
 };

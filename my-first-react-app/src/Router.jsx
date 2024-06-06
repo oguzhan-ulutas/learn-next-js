@@ -7,6 +7,7 @@ import EffectUse from "./components/hooks/EffectUse";
 import RefUse from "./components/hooks/RefUse";
 import ReducerUse from "./components/hooks/ReducerUse";
 import CustomHook from "./components/hooks/CustomHook";
+import LayoutEffectUse from "./components/hooks/LayoutEffectUse";
 
 const Router = () => {
   const router = createBrowserRouter([
@@ -18,6 +19,7 @@ const Router = () => {
     { path: "/ref-use", element: <RefUse /> },
     { path: "/reducer-use", element: <ReducerUse /> },
     { path: "/costom-hook", element: <CustomHook /> },
+    { path: "/layout-effect-use", element: <LayoutEffectUse /> },
   ]);
   return <RouterProvider router={router} />;
 };

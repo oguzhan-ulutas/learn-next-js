@@ -53,7 +53,11 @@ function App() {
       </Link>
 
       <Link to="/costom-hook">
-        <button>useReducer</button>
+        <button>custon hooks</button>
+      </Link>
+
+      <Link to="/layout-effect-use">
+        <button>useLayoutEffect</button>
       </Link>
     </>
   );
